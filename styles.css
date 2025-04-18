@@ -7,7 +7,6 @@
     --dark-text: #252B42;
     --light-bg: #ffffff;
     --dark-bg: #252B42;
-    --gray-bg: #F5F5F5;
     --border-color: #E6E6E6;
     --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
@@ -115,11 +114,11 @@ img {
 
 /* Navigation */
 .navbar {
-    /* position: fixed; */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: transparent;
     box-shadow: var(--shadow);
     z-index: 1000;
     padding: 15px 0;
@@ -150,7 +149,8 @@ img {
 }
 
 .nav-links ul li a {
-    color: var(--dark-text);
+    font-size: large;
+    color: white;
     font-weight: 500;
     transition: var(--transition);
 }
@@ -158,14 +158,22 @@ img {
 .nav-links ul li a:hover {
     color: var(--primary-color);
 }
+.social-icons{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
 
 .social-icons a {
-   
-    
+    width: 50px;
     color: var(--dark-text);
     transition: var(--transition);
 }
-
+.social-icons a img{
+    width: 25px;
+    height: 25px;
+}
 .social-icons a:hover {
     color: var(--primary-color);
 }
@@ -179,8 +187,8 @@ img {
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(37, 43, 66, 0.8), rgba(37, 43, 66, 0.8));
-    background-image: url("https://s3-alpha-sig.figma.com/img/85c4/0041/80b7ece24a3d47292461f8e199ffdd36?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TZVeRkJ8r-nJBn~IVQvcTHZES0CmoMTPY2i2sbizPE3L9y0I1Sk14BsIIXPuGbqm7zqQGwDhyM21tLG6H3QLXNdbYEMGePnibjNrpcjbkmTdlYVfepW32ZP46jlgEsBuuN-6LoHjK7EGEbA6Aa-RQfqTAfmtIvH0hyXFfv4FSwdQ-iPFOiIa3vfApx4wIzI~sgd5LIccjId0cH6~n3LmSD~muOzgw67eIThBAjrCTJ7IoFp5aYzkTFGi8REK0yV0tsZNX5IxHp56D0Tj0-N0UUwSJWagLoVEj~4kGYuwr7gN7YXtl9JNhow8aS8MSyIkBRBFomYnRY070sar1FqeWg__");
-    position: fixed;
+    background-image: url("./assets/hero-background.png");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: var(--light-text);
@@ -190,6 +198,7 @@ img {
 
 .hero-content {
     max-width: 600px;
+    height: 100vh;
     text-align: center;
     margin: 0 auto;
 }
@@ -263,7 +272,7 @@ img {
 /* Video Section */
 .video-section {
     padding: 80px 0;
-    background-color: var(--gray-bg);
+    
 }
 
 .video-container {
@@ -334,7 +343,6 @@ img {
 /* Prototyping Section */
 .prototyping {
     padding: 100px 0;
-    background-color: var(--gray-bg);
 }
 
 .prototyping .container {
@@ -604,11 +612,10 @@ img {
     background-color: #f8f8f8;
    
 }
-
-
-.form-group textarea {
-    height: 150px;
-    resize: vertical;
+.contact-info-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .contact-info {
     display: flex;
@@ -618,7 +625,8 @@ img {
 
 .info-item {
     display: flex;
-    align-items: flex-start;
+    flex-direction:column ;
+    align-items: center;
     gap: 15px;
 }
 

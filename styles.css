@@ -17,6 +17,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+img::selection{
+  user-select: none;
+}
 
 html {
     scroll-behavior: smooth;
@@ -693,8 +696,12 @@ img {
     display: flex;
     margin: 15px;
     gap: 5px;
+    flex-direction: row;
+    justify-content: start;
     align-items: center;
 }
+
+
 
 .footer-social {
     margin-top: 30px;

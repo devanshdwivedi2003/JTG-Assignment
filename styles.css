@@ -681,33 +681,31 @@ img {
   flex-direction: column;
   gap: 20px;
 }
-.modal{
-    height:100%;
-    width:100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index:999;
-    pointer-events: none;
-    padding:16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
+.modal {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  pointer-events: none;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
 }
-.modal-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight:700;
-    position: relative;
-    width: 25%;
-    height: 15%;
-    background-color: rgb(231, 241, 241);
-    
-
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  position: relative;
+  width: 25%;
+  height: 15%;
+  background-color: rgb(231, 241, 241);
 }
-.cancel-btn{
+.cancel-btn {
   display: flex;
   align-items: center;
   pointer-events: auto;
@@ -797,7 +795,7 @@ img {
 .footer-social a:hover {
   color: var(--primary-color);
 }
-.cancel-btn:hover{
+.cancel-btn:hover {
   background-color: transparent;
   color: var(--primary-color);
   transition: var(--transition);
